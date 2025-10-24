@@ -87,10 +87,36 @@ So let us be like Icarus—ambitious, brave, and willing to soar. But let us als
         </div>
       </section>
 
+      {/* Manifesto Section */}
+      <section className="manifesto">
+        <div className="container">
+          <h2>Manifesto</h2>
+          <p>
+            We believe in the power of ambitious thinking and calculated risk-taking. Like Icarus,
+            we dare to soar toward new horizons, but we do so with wisdom learned from those who
+            came before us. Our mission is to push the boundaries of knowledge, foster meaningful
+            dialogue, and create a community where innovative ideas can take flight.
+          </p>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section className="events">
+        <div className="container">
+          <h2>Events</h2>
+          <p>
+            Join us for thought-provoking gatherings, workshops, and discussions. Our events bring
+            together curious minds to explore new ideas, challenge assumptions, and build connections
+            that transcend traditional boundaries. Stay tuned for upcoming events and opportunities
+            to engage with our community.
+          </p>
+        </div>
+      </section>
+
       {/* Blog Section */}
       <section className="blog">
         <div className="container">
-          <h2>Member Insights</h2>
+          <h2>Articles</h2>
           <div className="blog-list">
             {blogPosts.map(post => {
               const isExpanded = expandedPost === post.id;
@@ -133,10 +159,60 @@ So let us be like Icarus—ambitious, brave, and willing to soar. But let us als
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="team">
+        <div className="container">
+          <h2>Team</h2>
+          <div className="team-grid">
+            <div className="team-member">
+              <div className="team-member-photo">
+                <div className="placeholder-photo">MF</div>
+              </div>
+              <h3>Marcus Flynn</h3>
+              <p className="team-member-role">Philosopher & Writer</p>
+              <p className="team-member-bio">
+                Marcus explores the intersection of ancient wisdom and modern innovation,
+                challenging conventional thinking through philosophical inquiry.
+              </p>
+            </div>
+
+            <div className="team-member">
+              <div className="team-member-photo">
+                <div className="placeholder-photo">SC</div>
+              </div>
+              <h3>Sophia Chen</h3>
+              <p className="team-member-role">Technology Researcher</p>
+              <p className="team-member-bio">
+                Sophia investigates how technology shapes human behavior and society,
+                focusing on responsible innovation and ethical AI development.
+              </p>
+            </div>
+
+            <div className="team-member">
+              <div className="team-member-photo">
+                <div className="placeholder-photo">JR</div>
+              </div>
+              <h3>James Rivera</h3>
+              <p className="team-member-role">Digital Artist</p>
+              <p className="team-member-bio">
+                James bridges traditional art forms with cutting-edge digital tools,
+                creating immersive experiences that challenge perception.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 Icarusconclave. All rights reserved.</p>
+          <div className="footer-content">
+            <p>&copy; 2025 Icarusconclave. All rights reserved.</p>
+            <div className="footer-links">
+              <a href="#/impressum">Impressum</a>
+              <a href="#/datenschutz">Datenschutz</a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
